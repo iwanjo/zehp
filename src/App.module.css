@@ -1,4 +1,7 @@
-
+*{
+    background-color: #F8F7FB;
+    box-sizing: border-box;
+}
 
 .brand{
     color: #8D2419;
@@ -15,7 +18,7 @@
     color: #525050;
     cursor: pointer;
     font-family: 'Playfair Display';
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 0 1.3rem!important;
 }
 
@@ -24,10 +27,97 @@
 }
 
 
+.textContainer{
+    margin-bottom: 8.5rem;
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.textContainer h1{
+    font-family: 'PT Sans', sans-serif;
+    color: #292C3C;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.textContainer h3{
+    padding: 2.4rem 0;
+    font-family: 'PT Sans', sans-serif;
+    color: #7F7F7F;
+    width: 45%;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+
+}
+
+.tags{
+    color: #8D2419;
+    font-family: 'Playfair Display', serif;
+    margin-left: 2.2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.about{
+    margin-top: 12rem;
+}
+
+
+.aboutContainer{
+    display: flex;
+    width: 100%;
+}
+
+.column1{
+    flex-shrink: 0;
+    flex-basis: 50%;
+}
+
+.aboutImg{
+    width: 20%;
+    height: auto;
+}
+
+
+
 @media screen and (max-width: 1024px) {
 
     .navLinksArea{
         margin: 0rem;
+    }
+
+    .textContainer{
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .textContainer h1{
+        text-align: center;
+        font-family: 'PT Sans', sans-serif;
+        color: #292C3C;
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+    
+    .textContainer h3{
+        padding: 2rem 0;
+        font-family: 'PT Sans', sans-serif;
+        color: #7F7F7F;
+        width: 85%;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+    
     }
     
 }
