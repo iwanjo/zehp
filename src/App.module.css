@@ -1,0 +1,33 @@
+
+
+.brand{
+    color: #8D2419;
+    font-family: 'Playfair Display';
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navLinksArea{
+    margin: 0 3rem;
+}
+
+.navLink{
+    color: #525050;
+    cursor: pointer;
+    font-family: 'Playfair Display';
+    font-size: 1.3rem;
+    padding: 0 1.3rem!important;
+}
+
+.navLink:hover{
+    color: rgb(53, 46, 46)!important;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .navLinksArea{
+        margin: 0rem;
+    }
+    
+}
