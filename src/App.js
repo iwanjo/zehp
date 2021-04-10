@@ -6,9 +6,16 @@ import ScrollToTop from "react-scroll-to-top";
 import Fade from 'react-reveal/Fade';
 
 
+
 function App() {
   return (
     <>
+
+    <head>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+    </head>
     {/* scroll to top button */}
     <ScrollToTop smooth />
 
@@ -45,9 +52,9 @@ function App() {
 
 
     <section className={styles.about}>
-      <div className={styles.aboutContainer}>
+      <div className={styles.aboutRow}>
 
-        <div className={styles.column1}>
+        <div className={styles.aboutColumn1}>
           <Fade top>
 
             <img 
@@ -55,23 +62,30 @@ function App() {
               src="./about.png"
               loading="lazy"
               alt="Ziithe Ewen Hiwa"
-              
             />
           </Fade>
         </div>
 
 
-        <div className={styles.column2}>
+        <div className={styles.aboutColumn2}>
+          <h1 className={styles.bioTitle}>Bio</h1>
+          <p className={styles.bioText}>I am a budding Computer Scientist, born and raised in Malawi but currently in my penultimate year of study at ALU in Rwanda.  
+          I’ve had a bit of a non-linear career trajectory; wiggling from curriculum design to communications, user experience design, digital marketing and web development. All my explorations have brought me to my current interest; an intersection and study of people and tech; product design, development and management. 
+          I am currently learning, exploring and looking for opportunities to grow in this field.</p>
 
+          <h1 className={styles.missionTitle}>Current Mission</h1>
+          <h5 className={styles.passionTags}>People. Problem Solving. Innovation</h5>
+          <p className={styles.passionText}>My passions and personal mission fall at the intersection of these three. I have explored different skillsets and industries in my career and academic journey thus far. One thing has stood out; I want to solve problems and create innovative solutions that positively impact people's lives across diverse industries.</p>
+          
+          <button className={styles.downloadBtn}><i class="fa fa-download" ></i><span>Download Resume</span></button>
+
+          
         </div>
 
 
       </div>
 
     </section>
-
-
-
     
   </>
   );

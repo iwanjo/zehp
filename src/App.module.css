@@ -3,16 +3,23 @@
     box-sizing: border-box;
 }
 
+/* Z.E.H Logo */
+
 .brand{
     color: #8D2419;
     font-family: 'Playfair Display';
     font-size: 2rem;
     cursor: pointer;
+    margin-left: .5rem;
 }
+
+/* Navbar region */
 
 .navLinksArea{
     margin: 0 3rem;
 }
+
+/* each individual navbar element */
 
 .navLink{
     color: #525050;
@@ -26,6 +33,7 @@
     color: rgb(53, 46, 46)!important;
 }
 
+/* container with the hero section */
 
 .textContainer{
     margin-bottom: 8.5rem;
@@ -42,6 +50,7 @@
     color: #292C3C;
     font-weight: bold;
     font-size: 2.4rem;
+
 }
 
 .textContainer h3{
@@ -58,41 +67,197 @@
 .tags{
     color: #8D2419;
     font-family: 'Playfair Display', serif;
-    margin-left: 2.2rem;
+    margin-left: 3.2rem;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .about{
-    margin-top: 12rem;
-}
+    margin-top: 9rem;
+    margin-bottom: 4rem;
 
-
-.aboutContainer{
-    display: flex;
-    width: 100%;
-}
-
-.column1{
-    flex-shrink: 0;
-    flex-basis: 50%;
 }
 
 .aboutImg{
-    width: 20%;
+    max-width: 65%;
     height: auto;
+    border-radius: 20%;
+    margin-left: 4rem;
 }
 
 
+.aboutColumn1{
+    float: left;
+    width: 44%;
+}
+  
+.aboutRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bioTitle{
+    color: #8D2419;
+    font-family: 'Playfair Display';
+    font-size: 1.8rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    font-weight: bold;
+    
+}
+
+.bioText{
+    color: #1B1B1C;
+    text-align: justify;
+    margin-right: 5rem;
+    font-size: 1.0rem;
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+.missionTitle{
+    color: #8D2419;
+    font-family: 'Playfair Display';
+    font-size: 1.8rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    font-weight: bold;
+}
+
+.passionTags{
+    color: #1B1B1C;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+.passionText{
+    color: #1B1B1C;
+    text-align: justify;
+    margin-right: 5rem;
+    font-size: 1.0rem;
+    font-family: 'PT Sans', sans-serif;
+    padding-bottom: .6rem;
+}
+
+.downloadBtn{
+    color: #8D2419;
+    border: 1px solid#8D2419;
+    outline: none;
+    padding: .6rem;
+    border-radius: 8px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.downloadBtn span{
+    padding: 0 .3rem;
+}
+
+.downloadBtn i{
+    padding: .3rem;
+}
+/* .downloadBtn:hover, .downloadBtn i:hover, .downloadBtn span:hover{
+    background-color: #8D2419;
+} */
+  
+@media screen and (max-width: 600px) {
+    .aboutColumn1, .aboutColumn2 {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .tags{
+        color: #8D2419;
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-left: 0rem;
+        text-align: center;
+    }
+
+    .about{
+        margin-top: 7rem;
+        margin-bottom: 4rem;
+    
+    }
+
+    .bioTitle{
+        /* padding: 0rem 0; */
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .bioText{
+        color: #1B1B1C;
+        text-align: justify;
+        font-size: .9rem;
+        font-family: 'PT Sans', sans-serif;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 2.5rem; 
+    }
+
+    .aboutImg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.2rem;
+        width: 60%;
+    }
+
+    .missionTitle{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .passionTags{
+        text-align: center;
+    }
+
+    .passionText{
+        color: #1B1B1C;
+        text-align: justify;
+        font-size: .9rem;
+        font-family: 'PT Sans', sans-serif;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 2.5rem; 
+    }
+
+    .downloadBtn{
+        display: block;
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+    }
+
+
+
+}
+
 
 @media screen and (max-width: 1024px) {
+
+    .brand{
+        color: #8D2419;
+        font-family: 'Playfair Display';
+        font-size: 2rem;
+        cursor: pointer;
+        margin-left: 0rem;
+    }
 
     .navLinksArea{
         margin: 0rem;
     }
 
     .textContainer{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
         margin-top: 5rem;
         display: flex;
         flex-direction: column;
@@ -106,7 +271,8 @@
         font-family: 'PT Sans', sans-serif;
         color: #292C3C;
         font-weight: bold;
-        font-size: 1.8rem;
+        font-size: 1.7rem;
+        padding: 0 1rem;
     }
     
     .textContainer h3{
@@ -115,9 +281,13 @@
         color: #7F7F7F;
         width: 85%;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: bold;
     
     }
-    
+
 }
+
+
+
+
