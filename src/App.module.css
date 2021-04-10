@@ -1,8 +1,11 @@
 *{
-    background-color: #F8F7FB;
     box-sizing: border-box;
 }
 
+.body{
+    background-color: #F8F7FB;
+
+}
 /* Z.E.H Logo */
 
 .brand{
@@ -186,6 +189,12 @@
     width: 100%;
 }
 
+.imageImg2{
+    display: block;
+    width: 100%;
+    height: 330px;
+}
+
 .imageOverlay{
     position: absolute;
     top: 0;
@@ -199,6 +208,7 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
+    transition: opacity .4s;
     
 }
 
@@ -222,11 +232,43 @@
 }
 
 
+/* footer */
 
-/* .downloadBtn:hover, .downloadBtn i:hover, .downloadBtn span:hover{
-    background-color: #8D2419;
-} */
-  
+.footerSection{
+    margin-top: 8rem;
+    height: auto;
+    background-color: #292C3C;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    margin-bottom: 0;
+}
+
+.footerContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footerContent h4{
+    padding: 4rem 0;
+}
+
+.footerContent img{
+    height: 50px;
+    margin-bottom: 3rem;
+}
+
+
+
+.footerBtm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 @media screen and (max-width: 600px) {
     .aboutColumn1, .aboutColumn2 {
         width: 100%;
@@ -300,6 +342,94 @@
         margin-left: auto;
         margin-right: auto;
         font-size: 1rem;
+    }
+
+    .portfolio{
+        margin-top: 5rem;
+        /* margin-bottom: 5rem; */
+    }
+    
+    .portfolioTitle{
+        text-align: center;
+        color: #8D2419;
+        font-family: 'Playfair Display';
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-bottom: 3.3rem;
+    }
+    
+    .portfolioImg{
+        /* position: relative;
+        width: 300px; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 83%;
+    }
+
+    .portfolioImg, .portfolioImg2{
+        margin-bottom: 2rem;
+
+    }
+    
+    .imageImg{
+        display: block;
+        width: 100%;
+    }
+    
+    .imageImg2{
+        display: block;
+        width: 100%;
+        height: 330px;
+    }
+    
+    .imageOverlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity .4s;
+        
+    }
+    
+    .imageTitle, .imageDescription{
+        background: transparent;
+        font-family: 'PT Sans', sans-serif;
+    }
+    
+    .imageTitle{
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    
+    .imageDescription{
+        font-size: 1.0rem;
+        text-align: center;
+    }
+    
+    .imageOverlay:hover{
+        opacity: 1;
+    }
+
+    .footerSection{
+        margin-top: 0rem;
+        height: auto;
+        background-color: #292C3C;
+        font-family: 'PT Sans', sans-serif;
+        color: white;
+        margin-bottom: 0;
+    }
+
+    .footerContent h4{
+        font-size: 1.3rem;
     }
 
 

@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import ScrollToTop from "react-scroll-to-top";
 import Fade from 'react-reveal/Fade';
-import { Route, BrowserRouter as Router, Link}	from "react-router-dom";
+import { BrowserRouter as Link}	from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col';
@@ -18,6 +18,7 @@ function Home() {
 
     {/* scroll to top button */}
     <ScrollToTop smooth />
+    <div className={styles.body}>
 
     {/* Navbar Area */}
     <Navbar collapseOnSelect expand="lg">
@@ -109,7 +110,7 @@ function Home() {
                 <Fade top>
                         <div className={styles.portfolioImg}>
                             <Link to="/travel-malawi">
-                            <img src="/travel-malawi.jpeg" alt="" className={styles.imageImg}></img>
+                            <img src="/travel-malawi.jpeg" alt="" className={styles.imageImg2}></img>
                                 <div className={styles.imageOverlay}>
                                     <div className={styles.imageTitle}>Travel Malawi</div>
                                     <p className={styles.imageDescription}>A Case Study for a travel application for Malawi.</p>
@@ -123,53 +124,72 @@ function Home() {
 
         </Container>
 
+        <Container>
+            <Row>
+                <Col sm={true}>
+                    <Fade top>
+                        <div className={styles.portfolioImg}>
+                            <Link to="/furniture">
+                            <img src="/furniture.jpg" alt="" className={styles.imageImg}></img>
+                                <div className={styles.imageOverlay}>
+                                    <div className={styles.imageTitle}>Kuza</div>
+                                    <p className={styles.imageDescription}>A Case Study for a furniture store in Malawi</p>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </Fade>
+                </Col>
+                <Col sm={true}>
+                <Fade bottom>
+                        <div className={styles.portfolioImg}>
+                            <Link to="/jobs">
+                            <img src="/work2.svg" alt="" className={styles.imageImg2}></img>
+                                <div className={styles.imageOverlay}>
+                                    <div className={styles.imageTitle}>Fuzula</div>
+                                    <p className={styles.imageDescription}>A Case Study for a mobile application providing opportunities to job seekers in Malawi.</p>
+                                </div>
+                            </Link>
+
+                        </div>
+                    </Fade>
+                </Col>
+            </Row>
+
+        </Container>
+
     </section>
 
+    <div className={styles.footerSection}>
+            <div className={styles.footerContent}>
+                <h4>You can get in touch with me through:</h4>
+                <Container>
+                    <Row>
+                        <Col sm>
+                            <a href="mailto:ziitheh@gmail.com" target="_blank" rel="noreferrer"><img src="./email.png" alt="Email Icon"></img></a>
+                        </Col>
+                        <Col sm>
+                        <a href="https://www.linkedin.com/in/ziitheewenhiwa/" target="_blank" rel="noreferrer"><img src="./linkedin.png" alt="LinkedIn Icon"></img></a>
 
+                        </Col>
+                        <Col sm>
+                        <a href="https://github.com/Ziithe" target="_blank" rel="noreferrer"><img src="./github.png" alt="GitHub Icon"></img></a>
 
-    {/* <section className={styles.portfolio}>
-      <h1 className={styles.portfolioTitle}>Portfolio</h1>
-
-      <div className={styles.portfolioGrid}>
-
-        <div className={styles.portfolioColumn1}>
-          <Fade bottom>
-
-            <div className={styles.projectsImg}>
-                <div className={styles.content}>
-                    <Link to="/265Cabs">
-                        <div className={styles.contentOverlay}>
-                            <img src="/265Cabs.png" alt="" className={styles.contentImage}></img>
-                                <div className={styles.contentDetailsFadeInBottom}>
-                                    <h3 className={styles.contentTitle}>+265Cabs</h3>
-                                    <p className={styles.contentText}>A design and prototype for A Cab Booking software for Malawi.</p>
-                                </div>
-                        </div>
-
-                    </Link>
-
-                </div>
+                        </Col>
+                    </Row>
+                </Container>
 
             </div>
-            
-          </Fade>
-          
-        </div>
+
+            <div className={styles.footerBtm}>
+                <p>Copyright &copy; 2021 Ziithe Ewen Hiwa</p>
+
+            </div>
+
+    </div>
 
 
-        <div className={styles.portfolioColumn2}>
-
-
-          
-        </div>
-
-
-      </div>
-      
-    </section> */}
-
-
-
+    </div>
   </>
   );
 }
