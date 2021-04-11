@@ -6,6 +6,7 @@
     background-color: #F8F7FB;
 
 }
+
 /* Z.E.H Logo */
 
 .brand{
@@ -34,6 +35,14 @@
 
 .navLink:hover{
     color: rgb(53, 46, 46)!important;
+}
+
+.navLink > .active{
+    border-bottom: 1px solid #8D2419;
+}
+
+.topNav{
+    background: #faf9fc;
 }
 
 /* container with the hero section */
@@ -259,6 +268,8 @@
     height: 50px;
     margin-bottom: 3rem;
 }
+
+
 
 
 

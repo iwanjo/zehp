@@ -1,13 +1,13 @@
 import styles from './App.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+import NavbarSection from './Navbar';
 import ScrollToTop from "react-scroll-to-top";
 import Fade from 'react-reveal/Fade';
 import { Link }	from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col';
+import Contact from './Contact';
 // import Cabs from './case-studies/Cabs';
 // import TravelMalawi from './case-studies/TravelMalawi';
 
@@ -15,31 +15,16 @@ import Col from 'react-bootstrap/Col';
 function Home() {
   return (
     <>
-
+    
     {/* scroll to top button */}
     <ScrollToTop smooth />
     <div className={styles.body}>
+    <NavbarSection />
 
-    {/* Navbar Area */}
-    <Navbar collapseOnSelect expand="lg">
-      <Navbar href="#home" className={styles.brand}>Z.E.H</Navbar>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-      <Nav className="mr-auto">
-      </Nav>
-    <Nav className={styles.navLinksArea}>
-      <Nav.Link href="#" className={styles.navLink}>Home</Nav.Link>
-      <Nav.Link href="#" className={styles.navLink}>About</Nav.Link>
-      <Nav.Link href="#" className={styles.navLink}>Portfolio</Nav.Link>
-      <Nav.Link href="#" className={styles.navLink}>Let's Chat</Nav.Link>
-
-    </Nav>
-      </Navbar.Collapse>
-  </Navbar>
-
+    
   {/* hero section */}
 
-  <div className={styles.textContainer}>
+  <div className={styles.textContainer} id="section1">
   <Fade bottom>
     <h1>Hello, my name is Ziithe Ewen Hiwa.</h1>
     <h3>I aim to create innovative and sustainable solutions that positively impact people's lives.</h3>
@@ -52,7 +37,7 @@ function Home() {
   <h3 className={styles.tags}>Product Design | Innovation</h3>
 
 
-    <section className={styles.about}>
+    <section className={styles.about} id="section2">
       <div className={styles.aboutRow}>
 
         <div className={styles.aboutColumn1}>
@@ -61,7 +46,7 @@ function Home() {
             <img 
               className={styles.aboutImg}
               src="./about.png"
-              loading="lazy"
+              loading="eager"
               alt="Ziithe Ewen Hiwa"
             />
           </Fade>
@@ -88,7 +73,7 @@ function Home() {
 
     </section>
 
-    <section className={styles.portfolio}>
+    <section className={styles.portfolio} id="section3">
         <h1 className={styles.portfolioTitle}>Portfolio</h1>
         <Container>
             <Row>
@@ -160,33 +145,10 @@ function Home() {
 
     </section>
 
-    <div className={styles.footerSection}>
-            <div className={styles.footerContent}>
-                <h4>You can get in touch with me through:</h4>
-                <Container>
-                    <Row>
-                        <Col sm>
-                            <a href="mailto:ziitheh@gmail.com" target="_blank" rel="noreferrer"><img src="./email.png" alt="Email Icon"></img></a>
-                        </Col>
-                        <Col sm>
-                        <a href="https://www.linkedin.com/in/ziitheewenhiwa/" target="_blank" rel="noreferrer"><img src="./linkedin.png" alt="LinkedIn Icon"></img></a>
-
-                        </Col>
-                        <Col sm>
-                        <a href="https://github.com/Ziithe" target="_blank" rel="noreferrer"><img src="./github.png" alt="GitHub Icon"></img></a>
-
-                        </Col>
-                    </Row>
-                </Container>
-
-            </div>
-
-            <div className={styles.footerBtm}>
-                <p>Copyright &copy; 2021 Ziithe Ewen Hiwa</p>
-
-            </div>
-
+    <div id="section4">
+    <Contact />
     </div>
+    
 
 
     </div>
